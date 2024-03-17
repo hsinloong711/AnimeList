@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: var(--default-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #201F31;
+    color: white;
+    font-weight: 500;
+}
+
+*:root {
+    --default-font: 'Poppins', Arial;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header .logo {
+    width: 140px;
+    height: 34px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.search-area input {
+    width: 100%;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.search-area input::placeholder {
+    font-family: var(--default-font);
+    font-weight: 500;
+    color: #bbbbbb
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.anime-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.anime-area .image {
+    position: relative;
+    min-width: 130px;
+    max-width: 130px;
+}
+
+.anime-area img {
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 230px;
+    max-height: 230px;
+    border-radius: 2px;
+}
+
+.anime-area .year {
+    position: absolute;
+    top: 2.5%;
+    right: 0;
+    background: #ffbade;
+    border-radius: 4px;
+    padding: 0rem 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.anime-area .title {
+    max-width: 130px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+@media(min-width: 768px) {
+    .search-area input {
+        width: 25%;
+    }
+
+    .anime-area .image {
+        min-width: 180px;
+        max-width: 180px;
+    }
+
+    .anime-area img {
+        min-width: 180px;
+        max-width: 180px;
+        height: 267px;
+        min-height: 267px;
+        max-height: 267px;
+    }
+
+    .anime-area .title {
+        max-width: 180px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+/* Desktop 1200px++ */
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+}
